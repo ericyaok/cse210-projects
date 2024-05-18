@@ -14,6 +14,7 @@ public class Options
         {
             Console.WriteLine($"{i + 1}. {_optionsList[i]}");
         }
+
     }
 
 }
