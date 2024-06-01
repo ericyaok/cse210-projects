@@ -28,7 +28,7 @@ class Program
 
         foreach (Video video in videoList)
         {
-            Console.WriteLine($"Title: {video._title}, Author: {video._author}, Length: {video._length}, Number of comments: {video._commentsList.Count}");
+            Console.WriteLine($"Title: {video._title}, Author: {video._author}, Length: {video._length}, Number of comments: {video.NumberOfComment()}");
             Console.WriteLine("Comments");
             foreach (Comment comment in video._commentsList)
             {
