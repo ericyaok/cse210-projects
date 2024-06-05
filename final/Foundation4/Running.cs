@@ -9,18 +9,9 @@ public class Running :Activity
         _distance = distance;
     }
 
-    public override double CalcSpeed()
+    public override double CalcDistance()
     {
-        return (_distance/base.GetMinute()) * 60;
+        return _distance;
     }
 
-     public override double CalcPace()
-    {
-        return (base.GetMinute()/_distance);
-    }
-
-    public override string GetSummary()
-    {
-        return $"{base.GetDate()} {this.GetType()} ({base.GetMinute()} min): Distance {_distance:F2} km, Speed: {CalcSpeed():F2} kph, Pace: {CalcPace():F2} min per km";
-    }
 }
