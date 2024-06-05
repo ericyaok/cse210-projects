@@ -14,7 +14,7 @@ class Program
         Product product3 = new Product("Broom","AL22",200,6);
         Product product4 = new Product("Ball","AL09",120,2);
 
-        List<Product> productList1 = new List<Product>{product1,product2};
+       
         List<Product> productList2 = new List<Product>{product3,product4};
 
         Order order1 = new Order(customer1,productList2);
